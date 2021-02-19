@@ -5,8 +5,10 @@ Date: 19/02/2021
 """
 
 from dataclasses import dataclass
+from dataclasses_json import dataclass_json
 
 
+@dataclass_json
 @dataclass
 class Command:
     """
