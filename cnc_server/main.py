@@ -9,7 +9,8 @@ import json
 
 from flask import Flask, request
 
-from command_container import CommandContainer
+from cnc_server.command_package.command_container import CommandContainer
+from cnc_server.command_package.command import Command
 
 app = Flask(__name__)
 g_command_container = CommandContainer()
@@ -24,7 +25,14 @@ def read_commands():
 
 @app.route("/write_commands", methods=['POST'])
 def write_commands():
-    return request.form
+    g_command_container.put_command(Command(**request.form))
+    return "success"
+
+
+@app.route("/write_commands_gui")
+def write_commands():
+    g_command_container.put_command(Command(**request.form))
+    return "success"
 
 
 if __name__ == '__main__':
