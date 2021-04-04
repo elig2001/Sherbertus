@@ -142,10 +142,13 @@
     <ClCompile Include="keyboardInputCreator.cpp" />
     <ClCompile Include="keyboardInputActionMaker.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="SocketCommunicator.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="IReadWrite.h" />
     <ClInclude Include="keyboardInputCreator.h" />
     <ClInclude Include="keyboardInputActionMaker.h" />
+    <ClInclude Include="SocketCommunicator.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

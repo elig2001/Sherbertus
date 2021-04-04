@@ -15,7 +15,7 @@ class KeyboardInputActionMaker
 {
 public:
 
-	void alt_tab(int tab_amount); // simulate key presses alt + tab to focus another program
+	void alt_tab(unsigned int tab_amount); // simulate key presses alt + tab to focus another program
 	void show_desktop(); // simulate key presses winkey + D to focus the Desktop
 	void change_language(); // simulate key presses shift + alt to change language
 	void caps_lock(); // simulate key press of caps lock to change case

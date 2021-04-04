@@ -20,7 +20,7 @@
 // Description: simulates a keyboard press of alt tab to focus another program
 // input: tab_amount - amount of tabs to press inside the alt tab procedure
 //
-void KeyboardInputActionMaker::alt_tab(int tab_amount)
+void KeyboardInputActionMaker::alt_tab(unsigned int tab_amount)
 {
 	KeyboardInputCreator input_creator = KeyboardInputCreator();
 	struct KeyboardInput alt = input_creator.create_keyboard_input(ALT_ASCII_VALUE);
