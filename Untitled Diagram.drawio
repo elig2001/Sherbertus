@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-04-06T16:55:50.551Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36" etag="2gZlwCaaxSsaiBgseJTc" version="14.5.7" type="github">
+<mxfile host="app.diagrams.net" modified="2021-04-07T16:53:24.783Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36" etag="lXlXXQK4eXO3wuXHKzGz" version="14.5.7" type="github">
   <diagram name="Page-1" id="e7e014a7-5840-1c2e-5031-d8a46d1fe8dd">
-    <mxGraphModel dx="1038" dy="548" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="826" background="#ffffff" math="0" shadow="0">
+    <mxGraphModel dx="1060" dy="548" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="826" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -38,19 +38,25 @@
           <mxGeometry y="34" width="300" height="56" as="geometry" />
         </mxCell>
         <mxCell id="TnTUuJm46Py2RoDYhFbB-53" value="KeyboardActionMaker" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="720" y="500" width="230" height="200" as="geometry" />
-        </mxCell>
-        <mxCell id="TnTUuJm46Py2RoDYhFbB-54" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="TnTUuJm46Py2RoDYhFbB-53">
-          <mxGeometry y="40" width="230" height="26" as="geometry" />
+          <mxGeometry x="1120" y="440" width="230" height="154" as="geometry" />
         </mxCell>
         <mxCell id="TnTUuJm46Py2RoDYhFbB-55" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="TnTUuJm46Py2RoDYhFbB-53">
-          <mxGeometry y="66" width="230" height="8" as="geometry" />
+          <mxGeometry y="40" width="230" height="8" as="geometry" />
         </mxCell>
         <mxCell id="TnTUuJm46Py2RoDYhFbB-56" value="- alt_tab(unsigned int tab_amount) : void&#xa;- show_desktop() : void&#xa;- change_language() : void&#xa;- caps_lock() : void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="TnTUuJm46Py2RoDYhFbB-53">
-          <mxGeometry y="74" width="230" height="126" as="geometry" />
+          <mxGeometry y="48" width="230" height="106" as="geometry" />
         </mxCell>
         <mxCell id="TnTUuJm46Py2RoDYhFbB-58" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;IActionMaker&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ make_action(string action_name) : void&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" vertex="1" parent="1">
-          <mxGeometry x="770" y="305" width="250" height="85" as="geometry" />
+          <mxGeometry x="1300" y="328" width="250" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="TnTUuJm46Py2RoDYhFbB-59" value="HookActionMaker" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="1500" y="440" width="440" height="134" as="geometry" />
+        </mxCell>
+        <mxCell id="TnTUuJm46Py2RoDYhFbB-61" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="TnTUuJm46Py2RoDYhFbB-59">
+          <mxGeometry y="26" width="440" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="TnTUuJm46Py2RoDYhFbB-62" value="- invert_mouse() : void&#xa;- change_key(char source, char destination) : void&#xa;- change_key_temporarely(char source, char destination, int duration) : void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="TnTUuJm46Py2RoDYhFbB-59">
+          <mxGeometry y="34" width="440" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
